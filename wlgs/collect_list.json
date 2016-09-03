@@ -1,0 +1,1 @@
+TypeError: 'undefined' is not an object (evaluating '($("div.pagination ul li:last a[href]")[0]).href')

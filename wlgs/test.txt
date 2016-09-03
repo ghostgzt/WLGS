@@ -1,0 +1,30 @@
+
+avascript:var a=$("div#tagContent0>div.copywriter-list.mb-dashboard-list>ul.copywriter-added>li.clearfix>div.section.clearfix>div.cw-detail.fr>a.button-109");alert(a.length);for(var i=0;i<a.length;i++){alert(a[i])};
+avascript:alert($("input#user_share_ad_activity_detail_id")[0].value);
+
+
+avascript:var a=$("#theone").contents().find("div#tagContent0 a.button-109");alert(a.length);for(var i=0;i<a.length;i++){alert(a[i].href.toString().replace(/http\:\/\/www\.weiligongshe\.com\/activities\//ig,''))};
+
+
+
+mid: avascript:var a=$("div#tagContent0 a.button-109");alert(a.length);for(var i=0;i<a.length;i++){alert(a[i])};
+
+page: avascript:alert($("div.pagination ul li:last a[href]")[0]);
+
+tid: avascript:var a=$("input#user_share_ad_activity_detail_id");alert(a.length);for(var i=0;i<a.length;i++){alert(a[i].value)};
+
+
+document.body.innerHTML=("<iframe id=\"theone\" src=\"about:blank\"><\/iframe>");
+
+var iframe=document.getElementById("theone");
+iframe.src = "http://www.weiligongshe.com/activities?page=1";
+ 
+if (iframe.attachEvent){
+    iframe.attachEvent("onload", function(){
+        alert("Local iframe is now loaded.");
+    });
+} else {
+    iframe.onload = function(){
+        alert("Local iframe is now loaded.");
+    };
+}
